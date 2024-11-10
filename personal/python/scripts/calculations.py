@@ -20,9 +20,7 @@ def calculator():
         try:
             user_selection = int(input("Select a formula number: "))
         except ValueError:
-            print("=========================================")
             print(MyColors.RED + "Your selection must be an integer number." + MyColors.END)
-            print("=========================================")
         else:
             selector(user_selection)
         print()
@@ -49,16 +47,12 @@ def area_triangle():
     try:
         s1 = float(input("Side A (cm)= "))
     except ValueError:
-        print("=========================================")
         print(MyColors.RED + "You must insert a number with a . as a decimal separator." + MyColors.END)
-        print("=========================================")
     else:
         try:
             s2 = float(input("Side B (cm)= "))
         except ValueError:
-            print("=========================================")
             print(MyColors.RED + "You must insert a number with a . as a decimal separator." + MyColors.END)
-            print("=========================================")
         else:
             a = (s1 * s2) / 2
             print("Area = {:.2f}cm2".format(a))
@@ -69,9 +63,7 @@ def area_square():
     try:
         s = float(input("Side (cm)= "))
     except ValueError:
-        print("=========================================")
         print(MyColors.RED + "You must insert a number with a . as a decimal separator." + MyColors.END)
-        print("=========================================")
     else:
         a = s * s
         print("Area = {:.2f}cm2".format(a))

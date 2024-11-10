@@ -23,4 +23,6 @@ def stop_watch():
     minutes = seconds // 60
     seconds = seconds % 60
 
-    print('Time: {}:{}'.format(int(minutes), seconds))
+    print('Time: {}:{:.2f}'.format(int(minutes), seconds))
+
+stop_watch()
